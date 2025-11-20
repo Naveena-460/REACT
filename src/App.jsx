@@ -3,16 +3,36 @@ import Banner from './components/Banner'
 import Cards from './components/Cards'
 import Number from './components/Number'
 import Boolean from './components/Boolean'
+import About from './components/About'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
     <>
       <NavBar />
-      <Banner />
-      <Cards />
-      <Number />
-      <Boolean />
+
+      <Routes>
+
+        
+        <Route 
+          path="/" 
+          element={
+            <>
+            
+              <Banner />
+              <Cards />
+              <Number />
+              <Boolean />
+            </>
+          } 
+        />
+
+       
+        <Route path="/about" element={<About />} />
+
+      </Routes>
+
     </>
   )
 }

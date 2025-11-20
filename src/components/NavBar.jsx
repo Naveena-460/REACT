@@ -1,12 +1,25 @@
 
+import { Link} from "react-router-dom";
 const NavBar = () => {
-    const name = "DORAEMON CLASSBOARD"
+    const name = "DORAEMON CLASSBOARD";
+      const links=[{link:"/home" },{link:"/about"}];
   return (
     <>
+  
     <div className="navbar">
         <div className="childnav">
-            <h1>{name}</h1>
+            <h1>{name}</h1> 
         </div>
+        <div className="linkstyle">
+           
+            <Link className="linklist" to="/"> Home</Link>
+             <Link className="linklist" to="/about">About </Link>
+             
+            
+        </div>
+      
+
+     
     </div>
     
     </>

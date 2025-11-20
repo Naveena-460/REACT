@@ -91,7 +91,7 @@ h2 {
 .childbanner img {
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  object-fit: fixed;
   transition: transform 0.5s ease;
 }
 
@@ -142,7 +142,7 @@ h2 {
 .cardimg img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  object-fit: fixed;
   transition: transform 0.3s ease;
 }
 
@@ -404,9 +404,139 @@ h2 {
   }
 }
 
+.linkstyle{
+  display:flex;
+  gap:30px;
+  align-items: right;
+}
 
+.linkstyle .linklist{
+text-decoration: none;
+color:white;
 
+}
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* About Page Styles */
+.mainabout {
+  background: white;
+  margin: 2rem;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e9ecef;
+}
+
+.about-content h1 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 1rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+  .mainabout {
+    margin: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .about-text {
+    padding: 1.5rem;
+  }
+  
+  .about-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainabout {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .about-text {
+    padding: 1.2rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .about-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .feature-card {
+    padding: 1.2rem;
+  }
 }
