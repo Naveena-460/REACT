@@ -5,6 +5,7 @@ import Number from './components/Number'
 import Boolean from './components/Boolean'
 import About from './components/About'
 import State from './components/State'
+import Doraemon from './components/Doraemon'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
@@ -32,6 +33,7 @@ const App = () => {
        
         <Route path="/about" element={<About />} />
 <Route path="/state" element={<State />} />
+<Route path="/dora" element={<Doraemon />} />
       </Routes>
 
     </>
