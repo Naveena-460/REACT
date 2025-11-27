@@ -31,7 +31,7 @@ const Child = ({ message, episodes, gadgets, firstFriend, profile }) => {
       </div>
 
       <div style={{ marginBottom: "10px" }}>
-        <strong style={{ color: "#c62828" }}>First Friend (Object): </strong>
+        <strong style={{ color: "#c62828" }}>First Friend (Array of Object): </strong>
         <span style={{ color: "#424242" }}>
           {firstFriend ? `${firstFriend.name} — ${firstFriend.role}` : "No friend"}
         </span>
