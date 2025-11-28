@@ -86,11 +86,12 @@ const Form = () => {
   };
 
   return (
+  <>
     <div className="min-h-screen flex items-center justify-center p-6 bg-slate-50">
       <div className="w-full max-w-xl">
         <div className="bg-white rounded-2xl shadow-2xl p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Add Institute Review
+           Institute Review
           </h2>
 
           <form className="space-y-4" onSubmit={onSubmit}>
@@ -245,6 +246,7 @@ const Form = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

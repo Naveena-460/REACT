@@ -42,6 +42,7 @@ const FormShow = () => {
   }
 
   return (
+    <>
     <div className="px-6 py-8 flex flex-col items-center space-y-6">
       {items.map((it) => (
         <article
@@ -104,6 +105,7 @@ const FormShow = () => {
         </article>
       ))}
     </div>
+    </>
   );
 };
 
