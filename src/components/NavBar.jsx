@@ -18,9 +18,8 @@ const NavBar = () => {
              <Link className="linklist" to="/dora">State process</Link>
              <Link className="linklist" to="/parent">Props</Link>
              <Link className="linklist" to="/form">Form</Link>
-              
              <Link className="linklist" to="/formshow">Display</Link>
-            
+            <Link className="linklist" to="/login">Login</Link>
         </div>
       
 

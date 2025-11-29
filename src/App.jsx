@@ -10,8 +10,12 @@ import Parent from './components/Parent'
 import Form from "./components/Form"
 import FormHandling from "./components/FormHandling"
 import FormShow from "./components/FormShow"
+
+import Login from './components/Login'
+import Register from './components/Register'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+
 
 const App = () => {
   return (
@@ -40,6 +44,9 @@ const App = () => {
 <Route path="/form" element={<Form/>}/>
 <Route path="/formhandling" element={<FormHandling/>}/>
 <Route path="/formshow" element={<FormShow/>}/>
+
+<Route path="/login" element={<Login/>}/>
+<Route path="/register" element={<Register/>}/>
       </Routes>
 
     </>
